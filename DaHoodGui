@@ -1,3 +1,5 @@
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
@@ -32,7 +34,7 @@ TextButton.MouseButton1Click:Connect(function()
 	local plr = game.Players.LocalPlayer
 	local GasStation = game:GetService("Workspace").MAP.Map["Gas Station"]["Gas Station"]
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Cashier.Part.Position)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(GasStation.Part.Position)
 end)
 
 TextButton_2.Parent = Frame
